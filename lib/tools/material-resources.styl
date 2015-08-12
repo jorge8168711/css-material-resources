@@ -35,7 +35,10 @@ accent-color          = #82B1FF
 /**
  **  FONT COLORS
  **------------------------------------------*/
-secondary-text-color  = #727272
+white1 = #fafafa
+white2 = #dedede
+black87 = #1b1b1b
+black54 = #aaa
 
 /**
  **  BORDER COLORS
@@ -87,6 +90,8 @@ MaterialShadow(level)
  **------------------------------------------*/
 
 MaterialText(style)
+    style = 'text-' + style
+
     if style == 'text-display-4'
         font-size 112px
         font-weight 300

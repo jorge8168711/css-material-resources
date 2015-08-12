@@ -2,18 +2,50 @@
 @import './tools/normalize-v3.0.3-ROBOTO'
 @import url("http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic")
 
+body
+    background-color white2
+
+h2
+    margin .25em 0
+
 .test
-    background-color accent-color
-    color white
+    background-color white
+    color black54
     margin 1em auto
     MaterialShadow(1)
     padding .5em
     width 80%
 
-    &__title
-        margin 0
-        MaterialText('text-display-4')
+    &__display-4
+        MaterialText('display-4')
+    &__display-3
+        MaterialText('display-3')
+    &__display-2
+        MaterialText('display-2')
+    &__display-1
+        MaterialText('display-1')
 
-    &__paragraph
-        margin 0
-        MaterialText('text-headline')
+    &__headline
+        MaterialText('headline')
+
+    &__title
+        MaterialText('title')
+
+    &__subhead-2
+        MaterialText('subhead-2')
+    &__subhead-1
+        MaterialText('subhead-1')
+
+    &__body-2
+        MaterialText('body-2')
+    &__body-1
+        MaterialText('body-1')
+
+    &__caption
+        MaterialText('caption')
+
+    &__button
+        MaterialText('button')
+
+    &__menu
+        MaterialText('menu')
