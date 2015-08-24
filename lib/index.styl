@@ -3,49 +3,83 @@
 @import url("http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic")
 
 body
-    background-color white2
+  background-color white2
 
 h2
-    margin .25em 0
+  margin .25em 0
 
 .test
-    background-color white
-    color black54
-    margin 1em auto
+  color $font-dark-secondary
+  margin 1em auto
+  MaterialShadow(1)
+  padding 2em
+  box-sizing border-box
+  width 80%
+
+  &--light
+    background-color $dark-theme
+
+  &__display-4
+    MaterialText('display-4')
+  &__display-3
+    MaterialText('display-3')
+  &__display-2
+    MaterialText('display-2')
+  &__display-1
+    MaterialText('display-1')
+
+  &__headline
+    MaterialText('headline')
+
+  &__title
+    MaterialText('title')
+
+  &__subhead-2
+    MaterialText('subhead-2')
+  &__subhead-1
+    MaterialText('subhead-1')
+
+  &__body-2
+    MaterialText('body-2')
+  &__body-1
+    MaterialText('body-1')
+
+  &__caption
+    MaterialText('caption')
+
+  &__button
+    MaterialText('button')
+
+  &__menu
+    MaterialText('menu')
+
+.divider
+  MaterialDivider()
+
+.paper
+  margin 4em auto
+  text-align center
+  width 80%
+
+.card
+  background-color white
+  display inline-block
+  height 150px
+  margin 1em
+  transition box-shadow .25s
+  width 150px
+
+  &--depth-1
     MaterialShadow(1)
-    padding .5em
-    width 80%
 
-    &__display-4
-        MaterialText('display-4')
-    &__display-3
-        MaterialText('display-3')
-    &__display-2
-        MaterialText('display-2')
-    &__display-1
-        MaterialText('display-1')
+  &--depth-2
+    MaterialShadow(2)
 
-    &__headline
-        MaterialText('headline')
+  &--depth-3
+    MaterialShadow(3)
 
-    &__title
-        MaterialText('title')
+  &--depth-4
+    MaterialShadow(4)
 
-    &__subhead-2
-        MaterialText('subhead-2')
-    &__subhead-1
-        MaterialText('subhead-1')
-
-    &__body-2
-        MaterialText('body-2')
-    &__body-1
-        MaterialText('body-1')
-
-    &__caption
-        MaterialText('caption')
-
-    &__button
-        MaterialText('button')
-
-    &__menu
-        MaterialText('menu')
+  &--depth-5
+    MaterialShadow(5)
