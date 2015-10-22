@@ -7,10 +7,13 @@ html(lang='es')
     meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
 
     title Material resources
+    
+    //- LINK DEL FAVICON
+    //- link(rel="shortcut icon" href="./public/images/favicon.ico")
 
-    //- style
-    //-     //-INCLUDE QUE CONTIENE LOS ESTILOS DE LA PARTE SUPERIOR DEL SITIO.
-    //-     include ./index.min.css
+    style
+      //- INCLUDE QUE CONTIENE LOS ESTILOS DE LA PARTE SUPERIOR DEL SITIO.
+      include ../stylesheets/components-primary/primary-css.css
 
   body
     article(class='test test--light')
@@ -42,6 +45,13 @@ html(lang='es')
       div(class='card card--depth-3')
       div(class='card card--depth-4')
       div(class='card card--depth-5')
+  
+  //- IMPORT DE FUENTE ROBOTO GOOGLE FONTS
+  link(href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,500,500italic' rel='stylesheet' type='text/css')
+  
+  //-INCLUDE DE LOS ESTILOS QUE NO SON PRIORIDAD PARA LA PARTE SUPERIOR DEL SITIO.
+  link(rel='stylesheet' type='text/css' href='./public/css/main.min.css')
 
-//-INCLUDE DE LOS ESTILOS QUE NO SON PRIORIDAD PARA LA PARTE SUPERIOR DEL SITIO.
-link(rel='stylesheet' type='text/css' href='./lib/index.min.css')
+  //- JAVASCRIPT
+  //- script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+  script(src='./public/js/main.min.js')
