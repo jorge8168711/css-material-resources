@@ -1,0 +1,75 @@
+/**
+ *******************************************************************************
+ **************************--DESCRIPCIÓN DEL PROYECTO--*************************
+ *******************************************************************************
+ *
+ *
+ * CONVENCIONES PARA LOS NOMBRES DE LAS CLASES
+ * =============================================================================
+ * BEM es una metodología para nombrar y clasificar selectores CSS de manera que
+ * los hacemos más estrictos, transparentes e informativos.
+ *
+ *     La convención de nombre sigue este patrón:
+ *         .bloque{}
+ *         .bloque__elemento{}
+ *         .bloque--modificador{}
+ *
+ *
+ * DESCRIPCIÓN DE LA DIVISIÓN DE LOS ESTILOS DEL PROYECTO.
+ * =============================================================================
+ * Los estilos se dividen en dos partes, el MAIN.SCSS y el PRIMARY-CSS.SCSS
+ * estos archivos únicamente contienen los imports de todos los recursos que
+ * componen el proyecto.
+ *
+ * Esto se hace con el fin de optimizar la entrega de CSS
+ * ya que los estilos del archivo PRIMARY-CSS.SCSS se colocan en una etiqueta
+ * <style> en el archivo index.html y los estilos restantes del
+ * proyecto se colocan en el archivo MAIN.SCSS.
+ *
+ * Los archivos que que tienen el sufijo [NOMBRE-DEL-ARCHIVO]-primary.scss que
+ * se encuentran en la carpeta comnponents-primary-css son de componentes que
+ * tienen clases que no son importantes para la parte superior de la página,
+ * como animaciones, o estilos que se encarguen de la interacción de la página.
+ *
+ * El código de los components se divide en 2 partes, la que se manda al archivo
+ * PRIMARY-CSS.CSS que son los estilos de la partes superior de la página,
+ * de esta manera se reduce la cantidad de código que se coloca en la parte
+ * superior del archivo index.html, colocando únicamente el código necesario
+ * para que se visulice correctamente la parte superior de la página.
+ * El código restante se manda al archivo main.min.scss que se aplica una
+ * vez que el navegador a terminado de leer todo el archivo HTML de esta manera
+ * se optimiza la entrega de css.
+ *
+ *
+ * CARPETAS
+ * =============================================================================
+ * COMPONENTS:
+ * En esta carpeta estan los estilos de todos los componentes del proyecto y el
+ * archivo _base.scss que importa las variables globales del proyecto y todos
+ * los archivos de la carpeta modules.
+ *
+ * COMPONENTS-PRIMARY-CSS:
+ * En esta carpeta estan los estilos necesarios de los componentes que se
+ * encuentran en la parte superior de la página.
+ * Los estilos contenidos en esta carpeta se compilan y se colocan en
+ * la etiqueta HEAD dentro de una etiqueta style, esto se
+ * hace con la finalidad de priorizar la carga del contenido superior
+ * de la página.
+ *
+ * MODULES:
+ * En esta carpeta esta el código sass que no genera css directamente, como
+ * variables, mixins y otras utilidades.
+ *
+ *
+ * ORDÉN EN EL QUE SE COMPILA EL CÓDIGO DEL PROYECTO
+ * =============================================================================
+ * 1. Variables y mixins utilizados en el proyecto.
+ * 2. Normalize. normalizando estilos, zona cero.
+ * 3. Elementos sin clase, estilos de etiquetas sin clase.
+ * 4. Primary-components, estilos de los componentes de la parte superior de la
+ *    página.
+ * 5. Utilidades, Patrones de diseño genéricos.
+ * 5. Import de icon fonts.
+ * 6. Componentes, elementos construidos a partir de objetos y sus extensiones.
+ *
+ */
