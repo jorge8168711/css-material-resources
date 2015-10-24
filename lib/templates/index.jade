@@ -3,43 +3,41 @@ html(lang='es')
   head
     //-METATAGS
     meta(charset='UTF-8')
-    meta(name='description' content='Muestra de las utilidades')
+    meta(name='description' content='Mixins y variables basados en los guidelines de material design')
     meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
 
     title Material resources
     
-    //- LINK DEL FAVICON
-    //- link(rel="shortcut icon" href="./public/images/favicon.ico")
-
     style
       //- INCLUDE QUE CONTIENE LOS ESTILOS DE LA PARTE SUPERIOR DEL SITIO.
       include ../stylesheets/components-primary/primary-css.css
 
   body
-    article(class='test test--light')
-      h2(class='test__display-4') Display-4
-      h2(class='test__display-3') Display-3
-      h2(class='test__display-2') Display-2
-      h2(class='test__display-1') Display-1
-      
-      h2(class='test__headline') Headline
-      
-      h2(class='test__title') Title
-      
-      h2(class='test__subhead-2') Subhead-2
-      h2(class='test__subhead-1') Subhead-1
-      
-      p(class='test__body-2') BODY2 ---Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      p(class='test__body-1') BODY1 ---Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      
-      h2(class='test__caption') Caption
-      
-      h2(class='test__button') Button
-      
-      h2(class='test__menu') Menu
+    header(class='wrapper header')
+      h1(class='header__title') Stylus Material Resources
+      p(class='header__description') Conjutno de variables y mixins para stylus basados en los guidelines de material design.
     
-    section.paper
-      .divider
+    article(class='wrapper wrapper--dark')
+      h2(class='text__display-4') Light 112px
+      h2(class='text__display-3') Regular 56px
+      h2(class='text__display-2') Regular 45px
+      h2(class='text__display-1') Regular 34px
+      
+      h2(class='text__headline') Regular 24px
+      
+      h2(class='text__title') Medium 20px
+      
+      h2(class='text__subhead-2') Regular 16px
+      h2(class='text__subhead-1') Regular 16px
+      
+      p(class='text__body-2') Medium 14px - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione perferendis aspernatur maxime saepe consequatur asperiores dolorum, officiis nisi, nostrum consequuntur in temporibus, doloremque neque voluptatum consectetur pariatur libero optio. Sunt.
+      p(class='text__body-1') Regular 14px - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dicta optio error autem animi possimus similique dolorem, ratione nesciunt reiciendis, nemo esse? Odit doloribus aliquid minus maiores alias, deleniti tempore. 
+      
+      h2(class='text__caption') Regular 12px
+      
+      h2(class='text__button') Medium (ALL CAPS) 14px
+        
+    section(class='wrapper wrapper--white')
       div(class='card card--depth-1')
       div(class='card card--depth-2')
       div(class='card card--depth-3')
@@ -51,7 +49,3 @@ html(lang='es')
   
   //-INCLUDE DE LOS ESTILOS QUE NO SON PRIORIDAD PARA LA PARTE SUPERIOR DEL SITIO.
   link(rel='stylesheet' type='text/css' href='./public/css/main.min.css')
-
-  //- JAVASCRIPT
-  //- script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
-  script(src='./public/js/main.min.js')
