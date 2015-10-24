@@ -1,4 +1,11 @@
 #Releases
+## [0.4.0] - 24-ago-2015
+### Cambios notables
+- Mejoras en la estructura del proyecto.
+- Separación de los archivos de variables y mixins.
+- Imagen de preview al readme.md
+- Estilos de los ejemplos del index.html
+
 ## [0.3.0] - 12-ago-2015
 ### Cambios notables
 - Mejoras en la descripción de las propiedades.
