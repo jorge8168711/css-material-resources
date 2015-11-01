@@ -1,0 +1,125 @@
+/**
+ *******************************************************************************
+ ************************************--MIXINS--*********************************
+ *******************************************************************************
+ */
+
+/**  SHADOWS-MIXIN
+**------------------------------------------*/
+@mixin MaterialShadow($level) {
+  @if $level == 0 {
+    border: 1px solid rgba(207, 217, 221, 0.2);
+  }
+
+  @else if $level == 1 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  @else if $level == '1-hover' {
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  @else if $level == 2 {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  @else if $level == 3 {
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  @else if $level == 4 {
+    box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  }
+
+  @else {
+    box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+  }
+}
+
+/**  TEXT-MIXIN
+ **------------------------------------------*/
+@mixin MaterialText($style) {
+
+  @if $style == 'display-4' {
+    font-size: 112px;
+    font-weight: 300;
+    letter-spacing: -5px;
+    line-height: 120px; //no esta en los guidelines
+  }
+
+  @else if $style == 'display-3'{
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 64px; //no esta en los guidelines
+  }
+
+  @else if $style == 'display-2' {
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 48px;
+  }
+
+  @else if $style == 'display-1' {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+
+  @else if $style == 'headline' {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  @else if $style == 'title' {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 44px;
+  }
+
+  @else if $style == 'subhead-2' {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  @else if $style == 'subhead-1' {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  //Menu
+  @else if $style == 'body-2' {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  @else if $style == 'body-1' {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  @else if $style == 'caption' {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px; //no esta en los guidelines
+  }
+
+  @else if $style == 'button' {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px; //no esta en los guidelines
+    text-transform: uppercase;
+  }
+}
+
+/**  MATERIAL DIVIDER-MIXIN
+ **------------------------------------------*/
+@mixin MaterialDivider() {
+  height: 1px;
+  overflow: hidden;
+  background-color: #e0e0e0;
+}

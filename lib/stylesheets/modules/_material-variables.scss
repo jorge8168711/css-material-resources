@@ -1,0 +1,57 @@
+/**
+ *******************************************************************************
+ **********************************--VARIABLES--********************************
+ *******************************************************************************
+ */
+
+/**  SHADOWS
+ **------------------------------------------*/
+$z-depth-0:        1px solid rgba(207, 217, 221, 0.2);
+$z-depth-1:        0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+$z-depth-1-hover:  0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+$z-depth-2:        0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+$z-depth-3:        0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+$z-depth-4:        0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+$z-depth-5:        0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+
+/**  BACKGROUND COLORS
+**------------------------------------------*/
+// 700s         - Barra de status.
+// 500s         - Barras de herramientas y bloques de color más grandes.
+// 300s         - Información secundaría.
+// Accent colors - Colores contrastantes, FAB y componentes como switches o sliders.
+//__________________________________________________________________________________
+
+// Main Colors
+$dark-primary-color:      #0288D1; //700s
+$default-primary-color:   #03A9F4; //500s
+$light-primary-color:     #4FC3F7; //300s
+$accent-color:            #FFD740; //Color accent
+
+// Grey Colors
+$grey-50:   #FAFAFA;
+$grey-100:  #F5F5F5;
+$grey-200:  #EEEEEE; //google grey-dark
+$grey-300:  #E0E0E0;
+$grey-400:  #BDBDBD;
+$grey-500:  #9E9E9E;
+$grey-600:  #757575;
+$grey-700:  #616161;
+$grey-800:  #424242;
+$grey-900:  #212121;
+
+/**  FONT COLORS
+**------------------------------------------*/
+// light theme font colors
+$black-primary:      rgba(black,.87); //87% de negro
+$black-secondary:    rgba(black,.54); //54% de negro
+$black-disabled:     rgba(black,.26); //26% de negro
+
+// dark theme font colors
+$white-primary:      #FFFFFF; //100% de blanco
+$white-secondary:    rgba(#FFFFFF,.70); //70% de blanco
+$white-disabled:     rgba(#FFFFFF,.30); //30% de blanco
+
+/**  BORDERS
+**------------------------------------------*/
+$border-1:  1px solid #e0e0e0;

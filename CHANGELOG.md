@@ -1,4 +1,8 @@
 #Releases
+## [0.5.0] - 01-nov-2015
+### Cambios notables
+-Agregue archivo con variables y mixins para sass.
+
 ## [0.4.0] - 24-ago-2015
 ### Cambios notables
 - Mejoras en la estructura del proyecto.
